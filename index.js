@@ -38,6 +38,4 @@ app.use('/api/subject', subjectRoute)
 app.use('/api/lesson', lessonRoute)
 app.use('/api/course/question', questionRoute)
 
-app.listen(process.env.PORT, () => {
-	console.log(`Backend conectado em localhost:${process.env.PORT}`)
-})
+app.listen(process.env.PORT || 3000)
