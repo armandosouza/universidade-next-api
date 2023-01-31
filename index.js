@@ -39,3 +39,5 @@ app.use('/api/lesson', lessonRoute)
 app.use('/api/course/question', questionRoute)
 
 app.listen(process.env.PORT || 3000)
+
+module.exports = app
